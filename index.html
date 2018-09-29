@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Shapes Mania</title> 
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+
+<meta charset="utf-8">
+<meta name="keywords" content="puzzles, puzzle games, free, online games, free games, free online games, free puzzle games">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+</head>
+<body>
+<div class="container">
+
+ <h2 class="title_sm"><span class="red">C</span><span class="green">h</span><span class="orange">a</span><span class="blue">i</span><span class="red">n</span><span class="green">s</span></h2>
+ <h3>Create the longest chain</h3>
+
+<table class="heading">
+  <tbody>
+     <tr>
+      <td><button id="restart-button" onclick="StartGame()" type ="button">New Game</button></td>	  
+      <td id="sound_td"><input type="image" id="sound-button" onclick="ToggleSound()"src="res/sound_mute.png"/></td>		  
+	  <td id="score_td">
+        <div id="score-container">0</div>
+        <div id="best-container">0</div>
+      </td>      
+    </tr>
+</tbody>
+</table>
+<div id="canvasContainer"><canvas id="myCanvas" width="500" height="500" onclick="StartShape(event)"></canvas>
+ <div class="game-message">
+        <div><p></p></div>
+        <div class="lower">
+	        <button id ="keep-playing-button" onClick="ContinueGame()" >Continue</button>
+            <button id ="retry-button" onclick="StartGame()">Try again</button>
+			
+      </div>
+</div>
+</div>
+<p class="game-explanation"><b>HOW TO PLAY:</b>Touch to grow rectangles and circles. When the new shape touches an existing shape of a different kind, they join in a chain. If the new shape cannot fit, a minimal dotted outline is shown. Create the longest chain.</p>
+<div id="bottom">© Shapes Mania</div>
+</div>
+
+<script src="cordova.js"></script>
+<script src="js/ShapesGames_ch.js"></script>
+<script src="js/rectangles_ch.js"></script>
+<script src="js/circles_ch.js"></script>
+<script src="js/chains.js"></script>
+ </body>
+</html>
