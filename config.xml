@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 
 <widget xmlns = "http://www.w3.org/ns/widgets" 
-   xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.shapesmania.chains" version = "1.00">
+   xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.shapesmania.chains" version = "1.01">
    
    <name>Chains</name>
    
@@ -12,6 +12,8 @@
    <author href = "http://shapesmania.com/" email = "ludmiladvmnt@gmail.com@gmail.com">
       Shapes Mania
    </author>
+   
+   <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="26" />
    
    <preference name = "permissions" value = "none"/>
    
