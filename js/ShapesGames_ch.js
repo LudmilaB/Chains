@@ -30,6 +30,7 @@ function ActivateSounds()
 		if(type=="rectangle")
 		{
 	      var measures=[19,24 ];
+		   var measures=[19,19 ];
 	      var ind=Math.floor(Math.random() * 2);
 	      this.width=measures[ind];
 	      switch(ind){

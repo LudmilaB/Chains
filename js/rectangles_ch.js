@@ -74,7 +74,7 @@
 		
 		context.globalCompositeOperation = 'destination-out';
 		context.beginPath();
-		context.rect( r.ct_x - r.width/2+8, r.ct_y-r.height/2+8, r.width-16, r.height-16 );
+		context.rect( r.ct_x - r.width/2+9, r.ct_y-r.height/2+9, r.width-18, r.height-18 );
         context.fillStyle = "black";
 	    context.fill();
 		context.closePath();
